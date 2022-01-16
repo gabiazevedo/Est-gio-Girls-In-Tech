@@ -1,1 +1,1 @@
-# Estágio-Girls-In-Tech
+# Internship-Girls-In-Tech
