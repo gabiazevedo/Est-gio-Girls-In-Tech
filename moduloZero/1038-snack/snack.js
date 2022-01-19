@@ -20,6 +20,6 @@ switch (productCode) {
     console.log(`Total: R$ ${(1.50 * productQuantity).toFixed(2)}`);
     break;
   default:
-    console.log(`Produto inválido! Digite um código válido.`)
+    console.log(`Invalid product! Please, type a valid product code.`)
     break;
 }
