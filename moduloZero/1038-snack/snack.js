@@ -1,7 +1,7 @@
 var input = require('fs').readFileSync('./moduloZero/1038-snack/stdin', 'utf8');
 var lines = input.split('\n');
 
-const [productCode, productQuantity] = lines.toString().replace(' ', '').split('').map(item => Number(item));;
+const [productCode, productQuantity] = lines.toString().replace(' ', '').split('').map(item => Number(item));
 
 switch (productCode) {
   case 1:
