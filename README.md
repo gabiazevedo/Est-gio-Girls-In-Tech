@@ -1,8 +1,26 @@
+<a href="https://github.com/gabiazevedo" target="_blank">
+  <img src="https://cdn.iconscout.com/icon/free/png-256/github-108-438008.png" width="48px" height="48px">
+</a> 
+<a href="https://www.instagram.com/gabicomacucar/" target="_blank">
+  <img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png" width="48px" height="48px">
+</a> 
+<a href="https://www.facebook.com/gabiazevedoms/" target="_blank">
+  <img src="https://i.ibb.co/zmYNW4p/facebook.png" width="48px" height="48px">
+</a> 
+<a href="https://www.linkedin.com/in/gabiazevedoms/" target="_blank">
+  <img src="https://i.ibb.co/Kx2GSrT/linkedin.png" width="48px" height="48px">
+</a>
+
+<br />
+<br />
+
 # 🚀 Internship Girls In Tech 🚀 
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Gabriela Azevedo](https://www.linkedin.com/in/gabiazevedoms/)_, através da plataforma [Alura](https://www.alura.com.br/), no programa de estágio Girls In Tech, patrocinado pela start-up [QUIQ](https://somosquiq.com/?utm_source=google&utm_medium=cpc&utm_campaign=gen-delivery&utm_content=institucional&palavra=somos%20quiq&gclid=CjwKCAiA_omPBhBBEiwAcg7smcPFx5l2i_ybppMAbqxBSPyWSJWwN9-DjRcS37b1Dg4hzS1_7oHrtxoCCMwQAvD_BwE). :rocket:
 
 O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online e aborda conteúdos como: Estrutura de Dados, API's Rest, Swagger, Kubbernets, Banco de Dados SQL & NoSQL e Cloud Storage.
+
+<img align="right" alt="GIF" src="https://octodex.github.com/images/inspectocat.jpg" width="300px" />
 
 ---
 
@@ -26,7 +44,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   }
   
   ```
-  ---
+---
 
 ### Módulo 1 - Introdução à JavaScript
 
@@ -48,7 +66,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   }
   
   ```
-  ---
+---
 
 ### Módulo 2 - API's REST | MySQL | Node.js | ORM
 
@@ -66,7 +84,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   }
   
   ```
-  ---
+---
 
 ### Módulo 3 - Modelagem de DB's | Swagger | Docker | NoSQL
 
@@ -86,7 +104,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   }
   
   ```
-  ---
+---
  
 ### Módulo 4 - Introdução à Micro Serviços | AWS
 
@@ -106,7 +124,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   }
   
   ```
-  ---
+---
 
 ### Módulo 5 - Cloud Storage
 
