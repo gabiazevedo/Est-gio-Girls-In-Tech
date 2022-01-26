@@ -10,7 +10,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 - [x] 1: _Algoritmos I: Selection, Insertion e Introdução a Análise_<br>
   https://www.alura.com.br/conteudo/projetos-de-algoritmos-1
-- [ ] 2: _Algoritmos II: MergeSort, QuickSort, Busca Binária e Análise de Algoritmo_<br>
+- [ ] 2: _Algoritmos II: MergeSort, QuickSort, Busca Binária e Análise de Algoritmo_<br> 🔋
   https://www.alura.com.br/conteudo/projetos-de-algoritmos-2
 - [ ] 3: _Estrutura de dados: Computação na prática com Java_<br>
   https://www.alura.com.br/conteudo/estrutura-de-dados
