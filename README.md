@@ -8,7 +8,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 ### Módulo 0 - Algoritmos e Estrutura de Dados
 
-- [ ] 1: _Algoritmos I: Selection, Insertion e Introdução a Análise_<br>
+- [x] 1: _Algoritmos I: Selection, Insertion e Introdução a Análise_<br>
   https://www.alura.com.br/conteudo/projetos-de-algoritmos-1
 - [ ] 2: _Algoritmos II: MergeSort, QuickSort, Busca Binária e Análise de Algoritmo_<br>
   https://www.alura.com.br/conteudo/projetos-de-algoritmos-2
