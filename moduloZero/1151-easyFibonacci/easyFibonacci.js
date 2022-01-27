@@ -1,5 +1,5 @@
 var input = require('fs').readFileSync('./moduloZero/1151-easyFibonacci/stdin', 'utf8');
-var lines = input.split('\n').toString();
+var lines = input.split('\n');
 
 let fibo = [];
   fibo[0] = 0;
