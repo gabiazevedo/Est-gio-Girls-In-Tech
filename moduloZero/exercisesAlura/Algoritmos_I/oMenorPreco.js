@@ -1,4 +1,4 @@
-const { products } = require('./products.json');
+const { products } = require('../products.json');
 
 // Encontrar o produto com o menor preço
 

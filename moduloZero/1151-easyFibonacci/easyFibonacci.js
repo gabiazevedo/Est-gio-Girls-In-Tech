@@ -6,6 +6,7 @@ let fibo = [];
   fibo[1] = 1;
 
 for (let i = 2; i < lines; i += 1) {
-  fibo[i] = fibo[i - 2] + fibo[i - 1]
+  fibo[i] = fibo[i - 2] + fibo[i - 1];
 }
+
 console.log(fibo.toString().replace(/[, ]+/g, " ").trim());
