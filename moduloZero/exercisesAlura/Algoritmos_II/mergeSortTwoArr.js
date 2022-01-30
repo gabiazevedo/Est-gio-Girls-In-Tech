@@ -41,9 +41,7 @@ const notesTwo = [
 ]
 
 function mergeSort(notes1, notes2) {
-
   let result = []; //novo array ordenado 
-
   let currentNote1 = 0; // variável que guarda o elemento atual do array 1
   let currentNote2 = 0; // variável que guarda o elemento atual do array 2
   let currentValue = 0; // variável que percorrerá os dois arrays
