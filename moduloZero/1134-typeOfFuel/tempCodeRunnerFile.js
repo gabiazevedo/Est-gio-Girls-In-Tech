@@ -1,1 +1,0 @@
-.map(num => Number(num))
