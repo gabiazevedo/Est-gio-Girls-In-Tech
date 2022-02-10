@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1043-triangle/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1043-triangle/stdin', 'utf8');
 var lines = input.split('\n').toString().split(' ');
 
 let a = Number(lines[0]);

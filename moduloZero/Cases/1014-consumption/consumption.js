@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1014-consumption/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1014-consumption/stdin', 'utf8');
 var lines = input.split('\n');
 
 const [distance, fuel] = lines;

@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1151-easyFibonacci/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1151-easyFibonacci/stdin', 'utf8');
 var lines = input.split('\n');
 
 let fibo = [];

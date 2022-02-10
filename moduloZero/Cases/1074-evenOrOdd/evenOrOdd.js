@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1074-evenOrOdd/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1074-evenOrOdd/stdin', 'utf8');
 var lines = input.split('\n').map((n) => Number(n));
 lines.shift();
 

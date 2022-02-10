@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/3342-keanu/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/3342-keanu/stdin', 'utf8');
 var lines = input.split('\n').toString();
 
 let totalHouses = lines * lines;

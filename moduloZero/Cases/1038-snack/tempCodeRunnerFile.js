@@ -1,1 +1,0 @@
-./moduloZero/1038-snack/stdin
