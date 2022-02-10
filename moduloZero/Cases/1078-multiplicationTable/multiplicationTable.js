@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1078-multiplicationTable/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1078-multiplicationTable/stdin', 'utf8');
 var lines = input.split('\n');
 
 const num = Number(lines);

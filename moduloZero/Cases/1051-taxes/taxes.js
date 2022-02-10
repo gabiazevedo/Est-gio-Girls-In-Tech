@@ -1,5 +1,6 @@
-var input = require('fs').readFileSync('./moduloZero/1051-taxes/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1051-taxes/stdin', 'utf8');
 var lines = Number(input.split('\n'));
+console.log(lines);
 
 if (lines >= 0.00 && lines <= 2000.00) {
   console.log('Isento');

@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1009-bonusSalary/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1009-bonusSalary/stdin', 'utf8');
 var lines = input.split('\n');
 
 const [name, salary, sales] = lines;

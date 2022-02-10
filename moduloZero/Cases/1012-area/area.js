@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1012-area/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1012-area/stdin', 'utf8');
 
 const [ A, B, C ] = input.split(' ').map(side => Number(side));
 const PI = 3.14159;

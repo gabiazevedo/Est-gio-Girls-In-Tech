@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1176-fibonacciArray/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1176-fibonacciArray/stdin', 'utf8');
 var lines = input.split('\n');
 lines.shift();
 

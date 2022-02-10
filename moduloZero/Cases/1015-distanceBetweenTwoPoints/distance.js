@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('./moduloZero/1015-distanceBetweenTwoPoints/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/1015-distanceBetweenTwoPoints/stdin', 'utf8');
 var lines = input.split('\n');
 
 let [x1, y1] = lines.shift().split(' ').map(n => Number(n));
