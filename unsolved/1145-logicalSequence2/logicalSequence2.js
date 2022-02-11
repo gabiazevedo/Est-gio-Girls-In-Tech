@@ -11,8 +11,12 @@ for (let i = 1; i <= y; i += 1) {
     count = 1;
   } else {
     console.log(i + '');
-    count++;
+    count += 1;
   }
+}
+
+for (let i = 1; i <= y; i += 1) {
+  console.log(i++, i++, i);
 }
 
 // Resolução incompleta
