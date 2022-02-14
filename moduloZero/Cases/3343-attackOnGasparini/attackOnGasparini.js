@@ -1,5 +1,6 @@
-var input = require('fs').readFileSync('./unsolved/3343-attackOnGasparini/stdin', 'utf8');
+var input = require('fs').readFileSync('./moduloZero/Cases/3343-attackOnGasparini/stdin', 'utf8');
 var lines = input.split('\n');
+console.log(lines)
 
 let entrada = lines[0].split(' ');
 console.log(entrada);
