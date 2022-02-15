@@ -34,7 +34,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   https://www.alura.com.br/conteudo/estrutura-de-dados
 - [x] 4: _JavaScript: Programando a Orientação a Objetos ✅_<br>
   https://www.alura.com.br/conteudo/javascritpt-orientacao-objetos
-- [ ] 5: _JavaScript: Interfaces e Herança em Orientação a Objetos_<br>
+- [x] 5: _JavaScript: Interfaces e Herança em Orientação a Objetos ✅_<br>
   https://www.alura.com.br/conteudo/javascript-polimorfismo
   
     ```json
