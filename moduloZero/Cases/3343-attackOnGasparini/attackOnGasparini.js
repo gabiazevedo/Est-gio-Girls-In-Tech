@@ -1,12 +1,21 @@
 var input = require('fs').readFileSync('./moduloZero/Cases/3343-attackOnGasparini/stdin', 'utf8');
 var lines = input.split('\n');
-console.log(lines)
 
-let entrada = lines[0].split(' ');
-console.log(entrada);
+const [_titans, fortressLife] = lines[0].split(' ');  // numeros de ataques | vida da fortaleza
+const fortressMonsters = Array.from(lines[1]); // etiquetas de tamanho dos titãns
+const [damageP, damageM, damageG] = lines[2].split(' '); // quantidade de dano em números
 
-let titansSize = lines[1];
-console.log(titansSize);
+let countDamage = 0;
 
-let titansNumber = lines[2].split(' ');
-console.log(titansNumber);
+const monsterDict = {
+  'P': Number(damageP),
+  'M': Number(damageM),
+  'G': Number(damageG)
+};
+
+for (let i = 0; i < fortressMonsters.length; i += 1) {
+  countDamage += monsterDict[fortressMonsters[i]];
+}
+let walls = Math.ceil(countDamage / fortressLife);
+
+console.log(walls);
