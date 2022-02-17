@@ -1,5 +1,6 @@
 var input = require('fs').readFileSync('./moduloZero/Cases/1094-experiments/stdin', 'utf8');
 var lines = input.split('\n');
+console.log(lines);
 lines.shift();
 
 let total = 0;
