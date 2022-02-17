@@ -4,7 +4,6 @@ var lines = input.split('\n');
 const [_titans, fortressLife] = lines[0].split(' ');  // numeros de ataques | vida da fortaleza
 const fortressMonsters = Array.from(lines[1]); // etiquetas de tamanho dos titãns
 const [damageP, damageM, damageG] = lines[2].split(' '); // quantidade de dano em números
-
 let countDamage = 0;
 
 const monsterDict = {
@@ -13,9 +12,14 @@ const monsterDict = {
   'G': Number(damageG)
 };
 
-for (let i = 0; i < fortressMonsters.length; i += 1) {
+fortressMonsters.forEach(index => countDamage += monsterDict[index]);
+const walls = Math.ceil(countDamage / fortressLife);
+
+console.log(walls);
+
+/*for (let i = 0; i < fortressMonsters.length; i += 1) {
   countDamage += monsterDict[fortressMonsters[i]];
 }
 let walls = Math.ceil(countDamage / fortressLife);
 
-console.log(walls);
+console.log(walls);*/
