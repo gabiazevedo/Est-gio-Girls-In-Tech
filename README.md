@@ -41,6 +41,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   {
       "prazoCertificacao": "21/02/22",
       "cargaHorária": "58h",
+      "status": "Finalizado"
   }
   
   ```
@@ -48,7 +49,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 ### Módulo 1 - Introdução à JavaScript
 
-- [ ] 1: _JavaScript: primeiros passos com a linguagem_<br>
+- [x] 1: _JavaScript: primeiros passos com a linguagem ✅_<br>
   https://www.alura.com.br/conteudo/javascript-introducao
 - [ ] 2: _Fundamentos do JavaScript: Tipos, variáveis e funções_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-tipos-variaveis-funcoes
@@ -63,6 +64,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   {
     "prazoCertificacao": "21/03/22",
     "cargaHorária": "56h",
+    "status": "Em desenvolvimento"
   }
   
   ```
