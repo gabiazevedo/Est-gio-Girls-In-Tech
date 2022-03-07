@@ -51,9 +51,9 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 - [x] 1: _JavaScript: primeiros passos com a linguagem ✅_<br>
   https://www.alura.com.br/conteudo/javascript-introducao
-- [ ] 2: _Fundamentos do JavaScript: Tipos, variáveis e funções_<br>
+- [x] 2: _Fundamentos do JavaScript: Tipos, variáveis e funções ✅_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-tipos-variaveis-funcoes
-- [ ] 3: _Fundamentos do JavaScript: Arrays_<br>
+- [x] 3: _Fundamentos do JavaScript: Arrays ✅_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-arrays
 - [ ] 4: _Fundamentos do JavaScript: Objetos_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-objetos
