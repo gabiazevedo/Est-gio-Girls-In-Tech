@@ -30,4 +30,8 @@ const oferecerSeguro = (obj) => {
   } 
 }
 
+console.log(Object.keys(cliente)); // método que retorna array com todas as chaves de um objeto
+console.log(Object.values(cliente)); // método que retorna array com todos os valores das chaves de um objeto
+console.log(Object.entries(cliente)); // método que retorna array com arrays divididos com pares de chave / valor
+
 oferecerSeguro(cliente);
