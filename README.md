@@ -55,18 +55,18 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   https://www.alura.com.br/conteudo/fundamentos-javascript-tipos-variaveis-funcoes
 - [x] 3: _Fundamentos do JavaScript: Arrays ✅_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-arrays
-- [ ] 4: _Fundamentos do JavaScript: Objetos_<br>
+- [x] 4: _Fundamentos do JavaScript: Objetos ✅_<br>
   https://www.alura.com.br/conteudo/fundamentos-javascript-objetos
-- [ ] 5: _HTTP: Entendendo a web por baixo dos panos_<br>
+- [ ] 5: _HTTP: Entendendo a web por baixo dos panos ✅_<br>
   https://www.alura.com.br/conteudo/http-fundamentos
-- [ ] 6: _Versionamento de Código com GIT - (Gitflow)_<br>
+- [ ] 6: _Versionamento de Código com GIT ✅_<br>
   https://www.alura.com.br/curso-online-git-github-controle-de-versao
   
   ```json
   {
     "prazoCertificacao": "21/03/22",
     "cargaHorária": "62h",
-    "status": "Em desenvolvimento"
+    "status": "Finalizado"
   }
   
   ```
