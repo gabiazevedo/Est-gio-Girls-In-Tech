@@ -74,12 +74,15 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 ### Módulo 2 - API's REST | MySQL | Node.js | ORM
 
-- [ ] 1: _Rest com NodeJS: API com Express e MySQL_<br>
-  https://www.alura.com.br/conteudo/node-rest-api
-- [ ] 2: _ORM com NodeJS: API com Sequelize e MySQL_<br>
-  https://www.alura.com.br/conteudo/orm-nodejs-api-sequelize-mysql
-- [ ] 3: _NodeJS: Crie uma API REST padronizada e escalável_<br>
-  https://www.alura.com.br/conteudo/nodejs-api-rest-padronizada-escalavel
+- [ ] 1: _NodeJS: Crie uma API REST padronizada e escalável_<br>
+  https://cursos.alura.com.br/course/nodejs-api-rest-padronizada-escalavel
+- [ ] 2: _Node.js: API Rest com Express e MongoDB_<br>
+  https://cursos.alura.com.br/course/nodejs-api-rest-express-mongodb
+- [ ] 3: _ORM com NodeJS: API com Sequelize e MySQL_<br>
+  https://cursos.alura.com.br/course/orm-nodejs-api-sequelize-mysql
+- [ ] 4: _ORM com Node.js: Avançando nas funcionalidades do Sequelize_<br>
+  https://cursos.alura.com.br/course/orm-nodejs-avancando-sequelize
+  
   
     ```json
   {
