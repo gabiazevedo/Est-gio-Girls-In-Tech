@@ -9,5 +9,4 @@ app.use(bodyParser.json());
 
 app.use('/api/suppliers', router);
 
-
 app.listen(config.get('api.port'), () => console.log(`Server listening on port ${config.get('api.port')}`));
