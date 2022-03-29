@@ -1,4 +1,6 @@
 const supplierTable = require('./database/supplierTable');
+const DataNotFound = require('./errors/DataNotFound');
+const InvalidFields = require('./errors/InvalidFileds');
 
 class Supplier {
   constructor({ id, company, email, category, createdAt, updatedAt }) {
@@ -11,6 +13,7 @@ class Supplier {
   }
 
   async createSupplier () {
+    this.validate();
     const result = await supplierTable.insert({
       company: this.company,
       email: this.email,
@@ -43,10 +46,26 @@ class Supplier {
     });
 
     if (Object.keys(updateData).length === 0) {
-      throw new Error('No data to update');
+      throw new DataNotFound();
     }
 
-    supplierTable.updateSup(this.id, updateData);
+    await supplierTable.updateSup(this.id, updateData);
+  };
+
+  deleteSupplier() {
+    return supplierTable.delete(this.id);
+  };
+
+  validate () {
+    const fields = ['company', 'email', 'category'];
+
+    fields.forEach(item => {
+      const value = this[item];
+
+      if (typeof value !== 'string' || value.length === 0) {
+        throw new InvalidFields(item);
+      };
+    });
   };
 }
 

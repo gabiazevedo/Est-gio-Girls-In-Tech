@@ -1,4 +1,5 @@
 const model = require('./models/supplierModel');
+const NotFound = require('../errors/NotFound');
 
 module.exports = {
   getSuppliers() {
@@ -17,7 +18,7 @@ module.exports = {
     });
 
     if (!foundSupplier) {
-      throw new Error('Supplier not found');
+      throw new NotFound();
     };
     return foundSupplier;
   },
@@ -26,7 +27,15 @@ module.exports = {
     return model.update(data, {
       where: {
         id: id
+      },
+    });
+  },
+
+  delete(id) {
+    return model.destroy({
+      where: {
+        id: id
       }
-    })
+    });
   }
 };
