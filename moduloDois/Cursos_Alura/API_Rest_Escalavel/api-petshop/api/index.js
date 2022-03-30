@@ -6,29 +6,51 @@ const NotFound = require('./errors/NotFound');
 const InvalidFields = require('./errors/InvalidFileds');
 const DataNotFound = require('./errors/DataNotFound');
 const ValueNotSuported = require('./errors/ValueNotSuported');
+const acceptFormat = require('./Serializer').acceptFormat;
+const ErrorSerializer = require('./Serializer').ErrorSerializer;
 
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+  let requestFormat = req.header('Accept');
+
+  if (requestFormat === '*/*') {
+    requestFormat = 'application/json';
+  };
+
+  if (acceptFormat.indexOf(requestFormat) === -1) {
+    return res.status(406).end();
+  };
+
+  res.setHeader('Content-Type', requestFormat);
+  next();
+});
+
 app.use('/api/suppliers', router);
 
 app.use((error, _req, res, _next) => {
+  let status = 500;
+
   if (error instanceof NotFound) {
-    res.status(404);
+    status = 404;
   };
   
   if (error instanceof InvalidFields || error instanceof DataNotFound) {
-    res.status(400);
+    status = 400;
   };
   
   if (error instanceof ValueNotSuported) {
-    res.status(406);
+    status = 406;
   };
-  
-  res.send(JSON.stringify({
-    message: error.message,
-    id: error.errorId
+
+  const errorSerializer = new ErrorSerializer(
+    res.getHeader('Content-Type')
+  )
+  res.status(status).send(errorSerializer.serialize({
+    id: error.errorId,
+    message: error.message
   }));
 });
 

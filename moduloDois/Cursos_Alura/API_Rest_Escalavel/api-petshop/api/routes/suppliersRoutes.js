@@ -1,10 +1,14 @@
 const router = require('express').Router();
 const supplierTabel = require('../database/supplierTable');
 const Supplier = require('../Supplier');
+const SupplierSerializer = require('../Serializer').SupplierSerializer;
 
 router.get('/', async (_req, res) => {
-  const result = await supplierTabel.getSuppliers()
-  res.status(200).send(JSON.stringify(result));
+  const result = await supplierTabel.getSuppliers();
+  const serializer = new SupplierSerializer(
+    res.getHeader('Content-Type')
+);
+  res.status(200).send(serializer.serialize(result));
 });
 
 router.post('/', async (req, res, next) => {
@@ -12,7 +16,10 @@ router.post('/', async (req, res, next) => {
     const data = req.body;
     const supplier = new Supplier(data);
     await supplier.createSupplier();
-    res.status(201).send(JSON.stringify(supplier));
+    const serializer = new SupplierSerializer(
+      res.getHeader('Content-Type')
+  );
+    res.status(201).send(serializer.serialize(supplier));
   } catch (error) {
     next(error);
   }
@@ -23,7 +30,10 @@ router.get('/:supplierId', async (req, res, next) => {
     const { supplierId } = req.params;
     const supplier = new Supplier({ id: supplierId });
     await supplier.getSupplier();
-    res.status(200).send(JSON.stringify(supplier));
+    const serializer = new SupplierSerializer(
+      res.getHeader('Content-Type'), ['email', 'createdAt', 'updatedAt']
+  );
+    res.status(200).send(serializer.serialize(supplier));
   } catch (error) {
     next(error);
   };
