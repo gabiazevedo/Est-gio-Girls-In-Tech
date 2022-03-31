@@ -1,3 +1,16 @@
-const data = require('./pedidos.json');
+const data = require('./orders.json');
+const totalPrice = require('./helpers/totalPrice');
 
-console.log(data[0]);
+const filterItem = (orders) => {
+  return orders.map(keys => Object.keys(keys)
+    .filter(item => item.includes('item_'))
+    .reduce((obj, key) => {
+      if (obj[key] === 'item_totalPrice') {
+        obj[key] = totalPrice(orders);
+      };
+      obj[key] = keys[key];
+      return obj;
+    }, {}))
+};
+
+console.log(filterItem(data));
