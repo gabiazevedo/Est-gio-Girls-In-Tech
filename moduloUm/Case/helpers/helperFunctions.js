@@ -1,6 +1,6 @@
 module.exports = {
-  totalPrice: (orders) => {
-    return orders.map((item) => item["item_totalPrice"] = Number((item.item_unitPrice * item.item_quantity).toFixed(2)));
+  subTotalPrice: (orders) => {
+    return orders.map((item) => Number((item.item_unitPrice * item.item_quantity).toFixed(2)));
   },
 
   formatMerchantInfo: (orders) => {
@@ -20,7 +20,24 @@ module.exports = {
     })); 
   },
 
-  cartTotal: (orders) => {
-    return orders.map((item) => item["cart_total"] = Number(((item.item_unitPrice * item.item_quantity) - item.item_discount).toFixed(2)));
-  }
+  totalPrice: (orders) => {
+    return orders.map((item) => Number(((item.item_unitPrice * item.item_quantity) - item.item_discount).toFixed(2)));
+  },
+
+  // dúvida: Como usar métodos dentro de outros métodos dentro desse module.exports.
+  paymentValue: (orders) => {
+    // gostaria de ter usado o método cartTotal dentro deste método para evitar redundância de código, mas não sei como fazer.
+    // não pesquisei ainda devido à urgência na entrega do case.
+    const totalCart = orders.map(item => Number(((item.item_unitPrice * item.item_quantity) - item.item_discount).toFixed(2)));
+    const formatTotalCart = orders.map((item, index) => {
+      item["cart_total"] = totalCart[index];
+      return item;
+    });
+    
+    return formatTotalCart.map((item) => {
+      item["payments_payment[1]_value"] = Number((item.cart_total * (33 / 100)).toFixed(2));
+      item["payments_payment[2]_value"] = Number((item.cart_total * (67 / 100)).toFixed(2));
+      return item;
+    });
+  },
 };
