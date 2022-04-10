@@ -15,9 +15,7 @@ module.exports = {
 
   formatCustomerAddress: (orders) => {
     const splitedNeighbor = orders.map((item) => item.customer_address_neighborhood.split(': '));
-    return splitedNeighbor.map((item) => ({
-      bairro: item[1],
-    })); 
+    return splitedNeighbor.map((item) => item["customer_address_neighborhood"] = item[1]); 
   },
 
   totalPrice: (orders) => {
@@ -27,7 +25,6 @@ module.exports = {
   // dúvida: Como usar métodos dentro de outros métodos dentro desse module.exports.
   paymentValue: (orders) => {
     // gostaria de ter usado o método cartTotal dentro deste método para evitar redundância de código, mas não sei como fazer.
-    // não pesquisei ainda devido à urgência na entrega do case.
     const totalCart = orders.map(item => Number(((item.item_unitPrice * item.item_quantity) - item.item_discount).toFixed(2)));
     const formatTotalCart = orders.map((item, index) => {
       item["cart_total"] = totalCart[index];
