@@ -1,0 +1,20 @@
+{
+  "name": "orm-api-sequelize",
+  "version": "1.0.0",
+  "main": "./api/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./api/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  }
+}
