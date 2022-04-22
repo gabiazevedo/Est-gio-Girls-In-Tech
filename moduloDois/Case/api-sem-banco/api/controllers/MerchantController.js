@@ -88,7 +88,7 @@ class MerchantController {
       const { id } = req.params;
       const result = deleteMerchant(Number(id), data);
       console.log(result)
-      if (!result) {
+      if (!result || {}) {
         return res.status(404).json({ message: `Is not possible to delete merchant. Merchant of id ${id} not found`});
       }
         return res.status(200).json(result);
@@ -150,6 +150,9 @@ class MerchantController {
   // envio de mensagem para filial à partir do id da matriz
 
   // deleta filial
+  static deleteBranch(req, res) {
+
+  }
 
 };
 

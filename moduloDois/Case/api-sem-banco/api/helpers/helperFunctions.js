@@ -24,9 +24,8 @@ module.exports = {
   },
 
   deleteMerchant: (id, data) => {
-    const index = data.findIndex(item => item.merchant.id === id);
-    data.splice(index, 1);
-    return data[index];
+    const index = data.find(item => item.merchant.id === id);
+    return data.splice(index, 1);
   },
   
   getBranchs: (id, data) => {
