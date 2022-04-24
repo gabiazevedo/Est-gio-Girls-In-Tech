@@ -1,5 +1,6 @@
 const express = require('express');
 const merchantRouter = require('./routes/merchantRoutes');
+const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();

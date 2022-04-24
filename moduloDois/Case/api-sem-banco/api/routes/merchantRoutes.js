@@ -6,9 +6,14 @@ router.post('/', MerchantController.createMerchant)
       .put('/:id', MerchantController.updateMerchant)
       .delete('/:id', MerchantController.deleteMerchant)
       .put('/:id/updateStatus', MerchantController.updateMerchantStatus)
-      .get('/:id/branchs', MerchantController.getBranchs)
+
+router.get('/:id/branchs', MerchantController.getBranchs)
       .get('/:id/branchs/:branchId', MerchantController.getBranchById)
+      .put('/:id/branchs/:branchId', MerchantController.updateBranch)
       .post('/:id/branchs', MerchantController.createBranch)
+      .put('/:id/branchs/:branchId/updateStatus', MerchantController.updateBranchStatus)
+      .post('/:id/branchs/:branchId/message', MerchantController.sendMessageToBranch)
+      .delete('/:id/branchs/:branchId', MerchantController.deleteBranch)
       .get('/:id', MerchantController.getMerchantById) // primeira rota GET /:id deixar por último 
 
 module.exports = router;

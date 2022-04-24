@@ -18,14 +18,15 @@ module.exports = {
   },
   
   updateMerchantStatus: (id, newStatus, data) => {
-    const index = data.findIndex(item => item.merchant.id === id);
-    data[index].merchant.status = newStatus["status"];
-    return data[index];
+    const index = data.find(item => item.merchant.id === id);
+    index.merchant.status = newStatus["status"];
+    return index;
   },
 
   deleteMerchant: (id, data) => {
     const index = data.find(item => item.merchant.id === id);
-    return data.splice(index, 1);
+    data.splice(index, 1);
+    return index;
   },
   
   getBranchs: (id, data) => {
@@ -41,10 +42,48 @@ module.exports = {
     return branchById;
   },
 
-  createBranch: (id, newBranchInfo, data) => {
-    const merchant = data.findIndex(item => item.merchant.id === id);
-    data[merchant].merchant.branchs.push(newBranchInfo);
-    return data[merchant];
+  createBranch: (id, newBranch, data) => {
+    const merchant = data.find(item => item.merchant.id === id);
+    merchant.merchant.branchs.push(newBranch);
+    return newBranch;
+  },
+
+  updateBranch: (id, branchId, branchInfo, data) => {
+    const merchant = data.find(item => item.merchant.id === id);
+    const branchs = merchant.merchant.branchs;
+    let branchIndex = branchs.findIndex(item => item.branchId === branchId);
+    branchs[branchIndex] = branchInfo;
+    return branchInfo;
+  },
+
+  updateBranchStatus: (id, branchId, newBranchStatus, data) => {
+    const merchantIndex = data.find(item => item.merchant.id === id);
+    const branchs = merchantIndex.merchant.branchs;
+    const branch = branchs.find(item => item.branchId === branchId);
+    branch.status = newBranchStatus["status"];
+    return branch;
+  },
+
+  sendMessageToBranch: (id, branchId, message, data) => {
+    const merchantIndex = data.find(item => item.merchant.id === id);
+    const branchs = merchantIndex.merchant.branchs;
+    const branch = branchs.find(item => item.branchId === branchId);
+
+    const date = {
+      message,
+      date: new Date().toISOString()
+    }
+    
+    branch.messages.push(date);
+    return branch.messages;
+  },
+
+  deleteBranch: (id, branchId, data) => {
+    const merchantIndex = data.find(item => item.merchant.id === id);
+    const branchs = merchantIndex.merchant.branchs;
+    const branch = branchs.find(item => item.branchId === branchId);
+    branchs.splice(branch, 1);
+    return branch;
   }
 }
 
