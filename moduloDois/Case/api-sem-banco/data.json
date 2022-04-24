@@ -1,0 +1,164 @@
+[
+  {
+    "merchant": {
+      "id": 1,
+      "name": "Outback SteackHouse",
+      "address": {
+        "streetName": "Avenida do Estado",
+        "streetNumber": 121,
+        "neighborhood": "Barra da Tijuca",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "postalCode": "98680-149"
+      },
+      "businessHours": {
+        "daysOfWeek": ["Quarta", "Quinta", "Sexta", "Sábado", "Domingo"],
+        "openingTime": "11h",
+        "closingTime": "01h"
+      },
+      "coordinates": {
+        "latitude": "-97423",
+        "longitude": "-5416788"
+      },
+      "averageTicket": 3105980.19,
+      "branchs": [
+        {
+          "branchId": 1,
+          "name": "Outback Jundiaí",
+          "address": {
+            "streetName": "Rua Pedro",
+            "streetNumber": 32,
+            "neighborhood": "",
+            "city": "Jundiaí",
+            "state": "SP",
+            "postalCode": "98089-589"
+          },
+          "businessHours": {
+            "daysOfWeek": ["Sábado"],
+            "openingTime": ["11h", "17h"],
+            "closingTime": ["14h", "02h"]
+          },
+          "coordinates": {
+            "latitude": "21414",
+            "longitude": "9342"
+          },
+          "averageTicket": 2199000.58,
+          "messages": [],
+          "status": "open",
+          "serviceType": ["Take Away", "Indoor", "Delivery"],
+          "categories": ["Steak House", "Beer", "Hamburguers"]
+        },
+        {
+          "branchId": 2,
+          "name": "Outback Max Ville",
+          "address": {
+            "streetName": "Estrada das Oliveiras",
+            "streetNumber": 990,
+            "neighborhood": "",
+            "city": "Extrema",
+            "state": "MG",
+            "postalCode": "37604-000"
+          },
+          "businessHours": {
+            "daysOfWeek": ["Sábado"],
+            "openingTime": ["11h", "17h"],
+            "closingTime": ["14h", "02h"]
+          },
+          "coordinates": {
+            "latitude": "985435",
+            "longitude": "23724"
+          },
+          "averageTicket": 1890359.09,
+          "messages": [],
+          "status": "open",
+          "serviceType": ["Take Away", "Indoor", "Delivery"],
+          "categories": ["Steak House", "Beer", "Hamburguers"]
+        },
+        {
+          "branchId": 3,
+          "name": "Outback Pátio Savassi",
+          "address": {
+            "streetName": "Avenida do Contorno",
+            "streetNumber": 6061,
+            "neighborhood": "Savassi",
+            "city": "Belo Horizonte",
+            "state": "MG",
+            "postalCode": "30110-929"
+          },
+          "businessHours": {
+            "daysOfWeek": ["Quarta", "Quinta", "Sexta", "Sábado", "Domingo"],
+            "openingTime": "11h",
+            "closingTime": "01h"
+          },
+          "coordinates": {
+            "latitude": "89734",
+            "longitude": "127834"
+          },
+          "averageTicket": 1751963.33,
+          "messages": [],
+          "status": "open",
+          "serviceType": ["Take Away", "Indoor", "Delivery"],
+          "categories": ["Steak House", "Beer", "Hamburguers"]
+        }
+      ],
+      "status": "open",
+      "serviceType": ["Take Away", "Indoor", "Delivery"],
+      "categories": ["Steak House", "Beer", "Hamburguers"]
+    }
+  },
+  {
+    "merchant": {
+      "id": 2,
+      "name": "Rei do Mate Francis",
+      "address": {
+        "streetName": "Avenida Francis",
+        "streetNumber": 1830,
+        "neighborhood": "",
+        "city": "Porto Alegre",
+        "state": "RS",
+        "postalCode": "10989-190"
+      },
+      "businessHours": {
+        "daysOfWeek": ["Terça", "Quarta", "Quinta"],
+        "openingTime": "11h",
+        "closingTime": "22h"
+      },
+      "coordinates": {
+        "latitude": "654234",
+        "longitude": "436534"
+      },
+      "averageTicket": 718910.81,
+      "branchs": [
+        {
+          "branchId": 1,
+          "name": "Rei do Mate Lago Azul",
+          "address": {
+            "streetName": "Rua Calangos",
+            "streetNumber": 756,
+            "neighborhood": "",
+            "city": "Belém",
+            "state": "PA",
+            "postalCode": "50919-340"
+          },
+          "businessHours": {
+            "daysOfWeek": ["Terça", "Quarta", "Quinta"],
+            "openingTime": "11h",
+            "closingTime": "22h"
+          },
+          "coordinates": {
+            "latitude": "98412",
+            "longitude": "-845156"
+          },
+          "averageTicket": 998419.90,
+          "messages": [],
+          "status": "open",
+          "serviceType": ["Take Away", "Delivery"],
+          "categories": ["Snacks", "Sandwiches"]
+        }
+      ],
+      "status": "open",
+      "serviceType": ["Take Away", "Delivery"],
+      "categories": ["Snacks", "Sandwiches"]
+    }
+  }
+]
