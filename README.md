@@ -96,19 +96,23 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
 
 ### Módulo 3 - Modelagem de DB's | Swagger | Docker | NoSQL
 
-- [ ] 1: _Java e Domain Driven Design: Apresentando os conceitos_<br>
+- [ ] 1: _SOLID com Java: Princípios da Programação Orientada a Objetos_<br>
+  https://cursos.alura.com.br/course/solid-orientacao-objetos-java
+- [ ] 2: _Java e Clean Architecture: Descomplicando Arquitetura de Software_
+  https://cursos.alura.com.br/course/java-clean-architecture
+- [ ] 3: _Java e Domain Driven Design: Apresentando os conceitos_<br>
   https://www.alura.com.br/conteudo/java-domain-driven-design-conceitos
-- [ ] 2: _Modelagem de banco de dados: Começando com NoSQL_<br>
+- [ ] 4: _Modelagem de Banco de Dados: Começando com NoSQL_<br>
   https://www.alura.com.br/conteudo/modelagem-banco-nosql
-- [ ] 3: _Docker: Criando containers sem dor de cabeça_<br>
+- [ ] 5: _Docker: Criando containers sem dor de cabeça_<br>
   https://www.alura.com.br/conteudo/docker-e-docker-compose
-- [ ] 4: _Swagger: Documentando suas APIs_<br>
+- [ ] 6: _Swagger: Documentando suas APIs_<br>
   https://www.alura.com.br/conteudo/swagger-documentando-apis
   
     ```json
   {
       "prazoCertificacao": "09/05/22",
-      "cargaHorária": "38h",
+      "cargaHorária": "56h",
   }
   
   ```
