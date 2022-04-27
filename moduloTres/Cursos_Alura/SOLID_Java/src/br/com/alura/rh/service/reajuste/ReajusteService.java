@@ -1,11 +1,7 @@
-package src.br.com.alura.rh.service;
+package src.br.com.alura.rh.service.reajuste;
 
 import java.math.BigDecimal;
 
-import src.br.com.alura.rh.ValidacaoException;
-import java.math.RoundingMode;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 import src.br.com.alura.rh.model.Funcionario;
