@@ -26,8 +26,8 @@ public class Aluno { // Aggregate Root - Classe raiz de outras classes que são 
     this.telefones.add(new Telefone(ddd, numero));
   }
 
-  public String getCPF() {
-    return cpf.getCPF();
+  public CPF getCPF() {
+    return cpf;
   }
 
   public String getNome() {

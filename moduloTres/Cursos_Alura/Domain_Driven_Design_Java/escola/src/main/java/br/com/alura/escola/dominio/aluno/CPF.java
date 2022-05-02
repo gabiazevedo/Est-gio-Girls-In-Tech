@@ -14,4 +14,9 @@ public class CPF {
   public String getCPF() {
     return numeroCPF;
   }
+
+  @Override
+  public String toString() {
+    return numeroCPF;
+  }
 }
