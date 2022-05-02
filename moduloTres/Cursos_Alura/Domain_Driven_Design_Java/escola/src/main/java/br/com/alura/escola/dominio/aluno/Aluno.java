@@ -3,7 +3,7 @@ package br.com.alura.escola.dominio.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aluno {
+public class Aluno { // Aggregate Root - Classe raiz de outras classes que são values objects
 
   private CPF cpf; // Classes que possuem um atributo que diferencia um objeto do outro são chamadas Entidades. 
   private String nome;
@@ -19,7 +19,7 @@ public class Aluno {
     this.email = email;
   }
 
-  public void adicionarTelefone(String ddd, String numero) {
+  public void adicionarTelefone(String ddd, String numero) { // Invariante (regra de negócio)
     if (telefones.size() == 2) {
       throw new IllegalArgumentException("Número máximo de telefones atingido!");
     }
