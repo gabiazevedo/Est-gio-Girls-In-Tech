@@ -1,11 +1,13 @@
 package br.com.alura.escola;
 
 
-import br.com.alura.escola.aplicacao.aluno.matricular.MatricularAluno;
-import br.com.alura.escola.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.alura.escola.dominio.PublicadorDeEventos;
-import br.com.alura.escola.dominio.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.alura.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
+import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.gamificacao.aplicacao.GeraSeloAlunoNovato;
+import br.com.alura.escola.gamificacao.infra.selo.RepositorioDeSelosEmMemoria;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 
 public class MatricularAlunoViaLinhaDeComando { // exemplo de código de uso das classes do domínio da aplicação
   
@@ -17,7 +19,9 @@ public class MatricularAlunoViaLinhaDeComando { // exemplo de código de uso das
     MatricularAlunoDto dto = new MatricularAlunoDto(nome, cpf, email);
 
     PublicadorDeEventos publicador = new PublicadorDeEventos();
+
     publicador.adicionar(new LogDeAlunoMatriculado());
+    publicador.adicionar(new GeraSeloAlunoNovato(new RepositorioDeSelosEmMemoria()));
 
     MatricularAluno matricular = new MatricularAluno(new RepositorioDeAlunosEmMemoria(), publicador);
     matricular.executa(new MatricularAlunoDto(nome, cpf, email));
