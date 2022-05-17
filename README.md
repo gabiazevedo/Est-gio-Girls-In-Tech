@@ -102,7 +102,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   https://cursos.alura.com.br/course/java-clean-architecture
 - [x] 3: _Java e Domain Driven Design: Apresentando os conceitos ✅_<br>
   https://www.alura.com.br/conteudo/java-domain-driven-design-conceitos
-- [ ] 4: _Modelagem de Banco de Dados: Começando com NoSQL_<br>
+- [X] 4: _Modelagem de Banco de Dados: Começando com NoSQL ✅_<br>
   https://www.alura.com.br/conteudo/modelagem-banco-nosql
 - [x] 5: _Docker: Criando containers sem dor de cabeça ✅_<br>
   https://www.alura.com.br/conteudo/docker-e-docker-compose
