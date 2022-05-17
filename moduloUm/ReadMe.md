@@ -4,7 +4,7 @@
 
 <img align="right" alt="GIF" src="https://github.com/gabiazevedo/Internship-Girls-In-Tech/blob/main/moduloUm/Case/freakingOutGif.gif" width="300px" />
 
-- O objetivo desse case é garantir o uso de lógica, usando de todos os recursos adquiridos no Módulo I, para formatar um JSON de acordo com as boas práticas de estutura de dados. Esse JSON contém todas as informções de um pedido.
+- O objetivo desse case é garantir o uso de lógica, usando de todos os recursos adquiridos no Módulo I, para formatar um JSON de acordo com as boas práticas de estutura de dados. Esse JSON contém todas as informações de um pedido.
 
 À partir do entendimento de como esse JSON pode ser melhorado, resolva os exercícios abaixo:
 
