@@ -113,6 +113,7 @@ O programa de estágio Girls In Tech conta com mais de 234 horas de aulas online
   {
       "prazoCertificacao": "09/05/22",
       "cargaHorária": "56h",
+      "status": "Finalizado"
   }
   
   ```
