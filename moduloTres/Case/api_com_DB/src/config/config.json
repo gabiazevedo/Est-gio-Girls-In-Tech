@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "gabiazevedo",
+    "password": "Ektopak110910#",
+    "database": "merchant_system",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "orm_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "",
+    "database": "orm_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
