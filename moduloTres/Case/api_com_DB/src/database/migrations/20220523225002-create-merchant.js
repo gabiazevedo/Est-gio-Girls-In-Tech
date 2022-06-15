@@ -1,46 +1,35 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Branches', {
+    await queryInterface.createTable('Merchants', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      branchName: {
+      merchantName: {
         type: Sequelize.STRING,
         allowNull: false,
-        field: 'branch_name',
+        field: 'merchant_name',
       },
       averageTicket: {
         type: Sequelize.DOUBLE,
+        allowNull: false,
         field: 'average_ticket',
       },
       status: {
         type: Sequelize.STRING,
-        allowNull: false
-      },
-      merchantId: {
-        type: Sequelize.INTEGER,
         allowNull: false,
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE',
-        field: 'merchant_id',
-        references: {
-          model: 'Merchants',
-          key: 'id'
-        }
       },
-      addressId: {
-        type: Sequelize.INTEGER,
+      openingTime: {
+        type: Sequelize.STRING,
         allowNull: false,
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE',
-        field: 'address_id',
-        references: {
-          model: 'Addresses',
-          key: 'id',
-        }
+        field: 'opening_time',
+      },
+      closingTime: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        field: 'closing_time',
       },
       createdAt: {
         allowNull: false,
@@ -55,6 +44,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, _Sequelize) => {
-    await queryInterface.dropTable('Branches');
+    await queryInterface.dropTable('Merchants');
   }
 };

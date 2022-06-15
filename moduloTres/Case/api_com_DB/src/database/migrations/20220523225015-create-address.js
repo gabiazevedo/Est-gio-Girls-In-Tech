@@ -2,10 +2,10 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('Addresses', {
       id: {
+        type: Sequelize.INTEGER, 
+        primaryKey: true,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER,
       },
       streetName: {
         type: Sequelize.STRING,
@@ -39,6 +39,21 @@ module.exports = {
       },
       longitude: {
         type: Sequelize.STRING,
+      },
+      establishmentId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
+        field: 'establishment_id',
+        references: {
+          model: 'Merchants',
+          key: 'id',
+        },
+        references: {
+          model: 'Branches',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,

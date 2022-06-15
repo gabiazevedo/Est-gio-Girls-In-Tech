@@ -12,6 +12,7 @@ module.exports = {
         postal_code: '98680-149',
         latitude: '-97423',
         longitude: '-5416788',
+        establishment_id: 1,
         created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
         updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
       },
@@ -24,6 +25,7 @@ module.exports = {
         postal_code: '98089-589',
         latitude: '21414',
         longitude: '9342',
+        establishment_id: 1,
         created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
         updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
       },
